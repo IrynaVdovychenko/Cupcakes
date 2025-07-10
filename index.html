@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header data-fullscreen class="header">
+            <div class="header__container">
+                <div class="header__info">
+                    <div class="header__logo">
+                        <img src="img/logo.svg" alt="logo">
+                        <p class="header__name">Крихітка Cupcake</p>
+                    </div>
+                    <div class="header__contacts">
+                        <a href="https://maps.google.com" class="header__adress" target="_blank">
+                            <svg>
+                                <use xlink:href="img/icons/sprite.svg#map"></use>
+                            </svg>
+                            <p class="header__city">м. Сіверськодонецьк,</p>
+                            <p class="header__street">вул. Вілєсова 6</p>
+                        </a>
+                        <div class="header__contact">
+                            <svg>
+                                <use xlink:href="img/icons/sprite.svg#phone"></use>
+                            </svg>
+                            <p class="header__phone">+38 (050) 000-00-00</p>
+                            <p class="header__hours">Щодня з 9:00 до 20:00</p>
+                            <div class="header__social">
+                                <svg>
+                                    <use xlink:href="img/icons/sprite.svg#viber"></use>
+                                </svg>
+                                <svg>
+                                    <use xlink:href="img/icons/sprite.svg#telegram"></use>
+                                </svg>
+                                <svg>
+                                    <use xlink:href="img/icons/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__promo">
+                    <div class="header__hint hint">найсмачніші</div>
+                    <h1 class="header__header">Тістечка та капкейки від 65 грн./шт. з доставкою по Сіверськодонецьку</h1>
+                    <div class="header__term">Приготуємо за 3 години в день замовлення.</br>Доставка на авто в холодильнику.</div>
+                    <div class="header__ref">
+                        <a data-goto="#catalog" href="##" class="header__link button">Перейти до каталогу</a>
+                        <div class="header__detail">9 різних<br>смаків на вибір</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__elements">
+                <div class="header__cupcake-container"><img src="img/cupcake1.png" alt="cupcake" class="header__cupcake"></div>
+                <img src="img/clouds-00.png" alt="" class="header__clouds">
+                <img src="img/leaf.png" alt="" class="header__leaf">
+                <img src="img/berry.png" alt="" class="header__berry-bottom">
+                <img src="img/berry.png" alt="" class="header__berry-up-left">
+                <img src="img/berry.png" alt="" class="header__berry-up-right">
+            </div>
+        </header>
+        <main class="main">
+            <section id="catalog" class="main__catalog catalog">
+                <div class="catalog__container">
+                    <h2 class="catalog__header">Для будь-яких подій та дорогих Вам людей</h2>
+                    <div class="catalog__content">
+                        <article class="catalog__card goods">
+                            <div class="goods__image-ibg">
+                                <picture>
+                                    <source srcset="img/cupcakes/creamy-castle.webp" type="image/webp">
+                                        <img src="img/cupcakes/creamy-castle.jpg" alt="Photo">
+                                </picture>
+                            </div>
+                            <div class="goods__description">
+                                <p class="goods__title title">Кремовий замок</p>
+                                <p class="goods__text">Ніжний крем будь-якого кольору на вибір, вафельна основа</p>
+                                <p class="goods__price">65 ₴/шт.</p>
+                                <button 
+                                    data-popup="#popupOrder"
+                                    data-title="Кремовий замок"
+                                    data-price="65"
+                                    type="button" 
+                                    class="goods__order button"
+                                >Замовити
+                                </button>
+                            </div>
+                        </article>
+                        <article class="catalog__card goods">
+                            <div class="goods__image-ibg">
+                                <picture>
+                                    <source srcset="img/cupcakes/raspberry-paradise.webp" type="image/webp">
+                                        <img src="img/cupcakes/raspberry-paradise.jpg" alt="Photo">
+                                </picture>
+                            </div>
+                            <div class="goods__description">
+                                <p class="goods__title title">Малиновый рай</p>
+                                <p class="goods__text">Повітряний крем, темна основа та ягода малини</p>
+                                <p class="goods__price">70 ₴/шт.</p>
+                                <button 
+                                    data-popup="#popupOrder"
+                                    data-title="Малиновый рай"
+                                    data-price="70"
+                                    type="button" 
+                                    class="goods__order button"
+                                >Замовити
+                                </button>
+                            </div>
+                        </article>
+                        <article class="catalog__card goods">
+                            <div class="goods__image-ibg">
+                                <picture>
+                                    <source srcset="img/cupcakes/fireworks.webp" type="image/webp">
+                                        <img src="img/cupcakes/fireworks.jpg" alt="Photo">
+                                </picture>
+                            </div>
+                            <div class="goods__description">
+                                <p class="goods__title title">Феєрверк</p>
+                                <p class="goods__text">Кольорові креми, з бісквітною основою</p>
+                                <p class="goods__price">65 ₴/шт.</p>
+                                <button 
+                                    data-popup="#popupOrder"
+                                    data-title="Феєрверк"
+                                    data-price="65"
+                                    type="button" 
+                                    class="goods__order button"
+                                >Замовити
+                                </button>
+                            </div>
+                        </article>
+                        <article class="catalog__card goods">
+                            <div class="goods__image-ibg">
+                                <picture>
+                                    <source srcset="img/cupcakes/chocolate_world.webp" type="image/webp">
+                                        <img src="img/cupcakes/chocolate_world.jpg" alt="Photo">
+                                </picture>
+                            </div>
+                            <div class="goods__description">
+                                <p class="goods__title title">Шоколадный світ</p>
+                                <p class="goods__text">Горіхова стружка, ніжний крем і шоколадна основа</p>
+                                <p class="goods__price">75 ₴/шт.</p>
+                                <button 
+                                    data-popup="#popupOrder"
+                                    data-title="Шоколадный світ"
+                                    data-price="75"
+                                    type="button" 
+                                    class="goods__order button"
+                                >Замовити
+                                </button>
+                            </div>
+                        </article>
+                        <article class="catalog__card goods">
+                            <div class="goods__image-ibg">
+                                <picture>
+                                    <source srcset="img/cupcakes/dragons-tears.webp" type="image/webp">
+                                        <img src="img/cupcakes/dragons-tears.jpg" alt="Photo">
+                                </picture>
+                            </div>
+                            <div class="goods__description">
+                                <p class="goods__title title">Сльози дракона</p>
+                                <p class="goods__text"></p>
+                                <p class="goods__price"></p>
+                                <button 
+                                    data-popup="#popupOrder"
+                                    data-title="Сльози дракона"
+                                    data-price="70"
+                                    type="button" 
+                                    class="goods__order button"
+                                >Замовити
+                                </button>
+                            </div>
+                        </article>
+                        <article class="catalog__card goods">
+                            <div class="goods__image-ibg">
+                                <picture>
+                                    <source srcset="img/cupcakes/summer-fantasy.webp" type="image/webp">
+                                        <img src="img/cupcakes/summer-fantasy.jpg" alt="Photo">
+                                </picture>
+                            </div>
+                            <div class="goods__description">
+                                <p class="goods__title title">Літня фантазія</p>
+                                <p class="goods__text">Прикраси в формі сердець для коханої людини</p>
+                                <p class="goods__price">70 ₴/шт.</p>
+                                <button 
+                                    data-popup="#popupOrder"
+                                    data-title="Літня фантазія"
+                                    data-price="70"
+                                    type="button" 
+                                    class="goods__order button"
+                                >Замовити
+                                </button>
+                            </div>
+                        </article>
+                        <article class="catalog__card goods">
+                            <div class="goods__image-ibg">
+                                <picture>
+                                    <source srcset="img/cupcakes/cape-of-madness.webp" type="image/webp">
+                                        <img src="img/cupcakes/cape-of-madness.jpg" alt="Photo">
+                                </picture>
+                            </div>
+                            <div class="goods__description">
+                                <p class="goods__title title">Мис безумства</p>
+                                <p class="goods__text">Різнокольорова основа, ніжний крем, ніжний крем та прикраси</p>
+                                <p class="goods__price">90 ₴/шт.</p>
+                                <button 
+                                    data-popup="#popupOrder"
+                                    data-title="Мис безумства"
+                                    data-price="90"
+                                    type="button" 
+                                    class="goods__order button"
+                                >Замовити
+                                </button>
+                            </div>
+                        </article>
+                        <article class="catalog__card goods">
+                            <div class="goods__image-ibg">
+                                <picture>
+                                    <source srcset="img/cupcakes/cloudy-fairytale.webp" type="image/webp">
+                                        <img src="img/cupcakes/cloudy-fairytale.jpg" alt="Photo">
+                                </picture>
+                            </div>
+                            <div class="goods__description">
+                                <p class="goods__title title">Хмарна казка</p>
+                                <p class="goods__text">Світла основа, ніжний крем із стружкою зверху</p>
+                                <p class="goods__price">70 ₴/шт.</p>
+                                <button 
+                                    data-popup="#popupOrder"
+                                    data-title="Хмарна казка"
+                                    data-price="70"
+                                    type="button" 
+                                    class="goods__order button"
+                                >Замовити
+                                </button>
+                            </div>
+                        </article>
+                        <article class="catalog__card goods">
+                            <div class="goods__image-ibg">
+                                <picture>
+                                    <source srcset="img/cupcakes/dark-knight.webp" type="image/webp">
+                                        <img src="img/cupcakes/dark-knight.jpg" alt="Photo">
+                                </picture>
+                            </div>
+                            <div class="goods__description">
+                                <p class="goods__title title">Темний лицар</p>
+                                <p class="goods__text">Темна основа, ніжний крем та смачні кульки</p>
+                                <p class="goods__price">70 ₴/шт.</p>
+                                <button 
+                                    data-popup="#popupOrder"
+                                    data-title="Темний лицар"
+                                    data-price="70"
+                                    type="button" 
+                                    class="goods__order button"
+                                >Замовити
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="main__mockup mockup">
+                <div class="mockup__container">
+                    <div class="mockup__photo">
+                        <img src="img/phone.png" alt="photo">
+                    </div>
+                    <div class="mockup__content">
+                        <div class="mockup__hint hint">не знайшли, що потрібно?</div>
+                        <h2 class="mockup__header">Приготуємо замовлення будь-якої складності за фото чи ескізом</h2>
+                        <div class="mockup__text">Завантажте фотографію чи ескіз капкейків, і ми розрахуємо вартість за 30 хвилин</div>
+                        <a data-popup="#popupMockup" href="#" class="mockup__link button">Завантажити фотографію</a>
+                    </div> 
+                </div>
+            </section>
+            <section class="main__me me">
+                <div class="me__container">
+                    <div class="me__content">
+                        <div class="me__hint hint">Хто буде готувати?</div>
+                        <h2 class="me__header">Особисто приготую та все красиво запакую для Вашої події</h2>
+                        <ul class="me__text">
+                            <li class="me__item">Проконсультую з вибором капкейків і запропоную нестандартну ідею</li>
+                            <li class="me__item">Приготую капкейки для Вашої події, які обов'язково всім сподобаються</li>
+                            <li class="me__item">Обережно та красиво все запакую, якщо Ви хочете зробити приємний подарунок</li>
+                        </ul>
+                        <a data-popup="#popupQuestion" href="##" class="me__link button">Поставити питання Ірині</a>
+                    </div>
+                    <div class="me__image">
+                        <div class="me__photo-ibg">
+                            <img src="img/woman_round.png" alt="photo">
+                        </div>
+                        <div class="me__sign">
+                            <p class="me__name"><span>Ірина Аліфанова</span></p>
+                            <p class="me__yours"><span>ваш кондитер</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__testimonials testimonials">
+                <div class="testimonials__container">
+                    <h2 class="testimonials__header">Почитайте відгуки задоволених клієнтів</h2>
+                    <div class="testimonials__response-cards">
+                        <div class="testimonials__swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <article class="testimonials__card">
+                                        <div class="testimonials__content">
+                                            <span class="testimonials__quotes">
+                                                <svg class="testimonials__svg">
+                                                    <use xlink:href="img/icons/sprite.svg#quotes"></use>
+                                                </svg>
+                                            </span>
+                                            <div class="testimonials__title">«Результат дуже порадував, друзі були у захваті»</div>
+                                            <div class="testimonials__text">Замовляла капкейки на день народження чоловіка — це був справжній хіт! Оформлення ніжне, охайне, а смак — просто казковий! Гості були в захваті, а я вже планую нове замовлення на дитяче свято. Дякую за любов до деталей! 💗</div>
+                                            <a href="##" class="testimonials__link">Читати відгук повністю</a>
+                                        </div>
+                                        <div class="testimonials__image">
+                                            <div class="testimonials__photo-ibg">
+                                                <picture>
+                                                    <source srcset="img/testimonials/1.webp" type="image/webp">
+                                                        <img src="img/testimonials/1.jpg" alt="Photo">
+                                                </picture>
+                                            </div>
+                                            <div class="testimonials__sign">
+                                                <p class="testimonials__name">Ірина Лавриненко</p>
+                                                <p class="testimonials__city">Сіверськодонецьк</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="testimonials__card">
+                                        <div class="testimonials__content">
+                                            <span class="testimonials__quotes">
+                                                <svg class="testimonials__svg">
+                                                    <use xlink:href="img/icons/sprite.svg#quotes"></use>
+                                                </svg>
+                                            </span>
+                                            <div class="testimonials__title">«Це не просто десерт — це мистецтво!»</div>
+                                            <div class="testimonials__text">Це не просто десерт — це мистецтво! Начинки дуже смачні, усе свіже, не надто солодко, як я люблю. Окреме дякую за упаковку: все доїхало в ідеальному стані. Дуже задоволена сервісом і результатом!</div>
+                                            <a href="##" class="testimonials__link">Читати відгук повністю</a>
+                                        </div>
+                                        <div class="testimonials__image">
+                                            <div class="testimonials__photo-ibg">
+                                                <picture>
+                                                    <source srcset="img/testimonials/2.webp" type="image/webp">
+                                                        <img src="img/testimonials/2.jpg" alt="Photo">
+                                                </picture>
+                                            </div>
+                                            <div class="testimonials__sign">
+                                                <p class="testimonials__name">Олена Дем'яненко</p>
+                                                <p class="testimonials__city">Рубіжне</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide">
+                                    <article class="testimonials__card">
+                                        <div class="testimonials__content">
+                                            <span class="testimonials__quotes">
+                                                <svg class="testimonials__svg">
+                                                    <use xlink:href="img/icons/sprite.svg#quotes"></use>
+                                                </svg>
+                                            </span>
+                                            <div class="testimonials__title">«Капкейки замовляв вперше — і не пошкодував»</div>
+                                            <div class="testimonials__text">Капкейки замовляла вперше — і не пошкодувала! Дуже приємне спілкування, оперативне виконання та чудова якість. Було навіть шкода їсти — настільки гарно виглядали 😄 Але після першого шматочка вже не зупинитись!</div>
+                                            <a href="##" class="testimonials__link">Читати відгук повністю</a>
+                                        </div>
+                                        <div class="testimonials__image">
+                                            <div class="testimonials__photo-ibg">
+                                                <picture>
+                                                    <source srcset="img/testimonials/3.webp" type="image/webp">
+                                                        <img src="img/testimonials/3.jpg" alt="Photo">
+                                                </picture>
+                                            </div>
+                                            <div class="testimonials__sign">
+                                                <p class="testimonials__name">Петро Бондар</p>
+                                                <p class="testimonials__city">Сіверськодонецьк</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="swiper-button-container">
+                                <div class="swiper-button-prev">
+                                    <svg class="swiper-button-prev__svg">
+                                        <use xlink:href="img/icons/sprite.svg#next"></use>
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <svg class="swiper-button-next__svg">
+                                        <use xlink:href="img/icons/sprite.svg#next"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__orders orders">
+                <div class="orders__container">
+                    <h2 class="orders__header">Зробили більш ніж 1000 замовлень за 2 роки</h2>
+                    <p class="orders__text">Подивіться фото реальних замовлень з нашого Instagram</p>
+                    <div class="orders__gallery gallery">
+                        <ul class="gallery__items">
+                            <li class="gallery__item">
+                                <a href="##" class="gallery__link-ibg">
+                                    <picture>
+                                        <source srcset="img/orders/1.webp" type="image/webp">
+                                        <img src="img/orders/1_full.jpg" alt="Photo">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="gallery__item">
+                                <a href="##" class="gallery__link-ibg">
+                                    <picture>
+                                        <source srcset="img/orders/2.webp" type="image/webp">
+                                        <img src="img/orders/2_full.jpg" alt="Photo">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="gallery__item">
+                                <a href="##" class="gallery__link-ibg">
+                                    <picture>
+                                        <source srcset="img/orders/3.webp" type="image/webp">
+                                        <img src="img/orders/3_full.jpg" alt="Photo">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="gallery__item">
+                                <a href="##" class="gallery__link-ibg">
+                                    <picture>
+                                        <source srcset="img/orders/4.webp" type="image/webp">
+                                        <img src="img/orders/4_full.jpg" alt="Photo">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="gallery__item">
+                                <a href="##" class="gallery__link-ibg">
+                                    <picture>
+                                        <source srcset="img/orders/5.webp" type="image/webp">
+                                        <img src="img/orders/5_full.jpg" alt="Photo">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="gallery__item">
+                                <a href="##" class="gallery__link-ibg">
+                                    <picture>
+                                        <source srcset="img/orders/6.webp" type="image/webp">
+                                        <img src="img/orders/6_full.jpg" alt="Photo">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="gallery__item">
+                                <a href="##" class="gallery__link-ibg">
+                                    <picture>
+                                        <source srcset="img/orders/7.webp" type="image/webp">
+                                        <img src="img/orders/7_full.jpg" alt="Photo">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="gallery__item">
+                                <a href="##" class="gallery__link-ibg">
+                                    <picture>
+                                        <source srcset="img/orders/8.webp" type="image/webp">
+                                        <img src="img/orders/8_full.jpg" alt="Photo">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="gallery__item">
+                                <a href="##" class="gallery__link-ibg">
+                                    <picture>
+                                    <source srcset="img/orders/9.webp" type="image/webp">
+                                        <img src="img/orders/9_full.jpg" alt="Photo">
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main__contact contact">
+                <div class="contact__container">
+                    <div class="contact__wrapper">
+                        <form action="##" class="contact__form">
+                            <h3 class="contact__header">Щоб зробити замовлення, вкажіть номер свого телефону</h3>
+                            <p class="contact__text">Ми зателефонуємо впродовж 15 хвилин, щоб уточнити Ваші побажання</p>
+                            <div class="contact__data">
+                                <input type="tel" name="orderPhone" id="contactPhone" placeholder="Номер телефону" class="contact__phone">
+                                <button type="submit" class="contact__submit button">Зробити замовлення</button>
+                            </div>
+                            <div class="contact__agree">
+                                <input checked type="checkbox" id="checkbox" name="agree" required class="contact__input">
+                                <label for="checkbox" class="contact__label">
+                                    Натискаючи кнопку, Вы погоджуєтесь з <a href=""  class="contact__link">умовами обробки персональних даних</a>
+                                </label>
+                            </div>
+                            <img src="img/leaf.png" alt="" class="contact__leaf-left">
+                            <img src="img/leaf.png" alt="" class="contact__leaf-right">
+                            <img src="img/berry_new.png" alt="" class="contact__berry-up-right">
+                            <img src="img/berry_new.png" alt="" class="contact__berry-bottom-left">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"> 
+            <div class="footer__container">
+                <p class="footer__text">©  nazvasaitu.ua,  2025  "Крихітка Cupcake"</p>
+            </div>
+        </footer>
+    </div>
+    <div id="popupMockup" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <button data-close type="button" class="popup__close">
+                    <svg>
+                        <use xlink:href="img/icons/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <form action="https://httpbin.org/post" method="post" class="popup__form">
+                    <label class="popup__label">
+                        <span>Як до Вас звертатись</span>
+                        <input type="text" name="name" id="name" class="popup__input">
+                    </label>
+                    <label class="popup__label">
+                        <span>Ваш email</span>
+                        <input type="email" name="email" id="email" class="popup__input">
+                    </label>
+                    <p>або</p>
+                    <label class="popup__label">
+                        <span>Ваш номер телефону</span>
+                        <input type="tel" name="phone" id="phone" class="popup__input">
+                    </label>
+                    <label class="popup__label">
+                        Завантажити фотографію
+                        <input type="file" name="file" id="file" accept="image/*" multiple class="popup__input">
+                    </label>
+                    <button type="submit" class="popup__submit button">Відправити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="popupQuestion" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <button data-close type="button" class="popup__close">
+                    <svg>
+                        <use xlink:href="img/icons/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <form action="https://httpbin.org/post" method="post" class="popup__form">
+                    <label class="popup__label">
+                        <span>Як до Вас звертатись</span>
+                        <input type="text" name="name" id="nameQuestion" class="popup__input">
+                    </label>
+                    <label class="popup__label">
+                        <span>Ваш email</span>
+                        <input type="email" name="email" id="emailQuestion" class="popup__input">
+                    </label>
+                    <p>або</p>
+                    <label class="popup__label">
+                        <span>Ваш номер телефону</span>
+                        <input type="tel" name="phone" id="phoneQuestion" class="popup__input">
+                    </label>
+                    <label class="popup__label">
+                        <span>Ваше питання</span>
+                        <textarea name="question" id="textQuestion" class="popup__input"></textarea>
+                    </label>
+                    <button type="submit" class="popup__submit button">Відправити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="popupOrder" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <button data-close type="button" class="popup__close">
+                    <svg>
+                        <use xlink:href="img/icons/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <form action="https://httpbin.org/post" method="post" class="popup__form">
+                    <div class="popup__image"></div>
+                    <div class="popup__title"></div>
+                    <div class="popup__price"></div>
+                    <label class="popup__label">
+                        <span>Як до Вас звертатись</span>
+                        <input type="text" name="name" id="nameOrder" class="popup__input">
+                    </label>
+                    <label class="popup__label">
+                        <span>Ваш email</span>
+                        <input type="email" name="email" id="emailOrder" class="popup__input">
+                    </label>
+                    <p>або</p>
+                    <label class="popup__label">
+                        <span>Ваш номер телефону</span>
+                        <input type="tel" name="phone" id="phoneOrder" class="popup__input">
+                    </label>
+                    <label class="popup__label">
+                        <span>Кількість та побажання</span>
+                        <textarea name="order" id="textOrder" class="popup__input"></textarea>
+                    </label>
+                    <button type="submit" class="popup__submit button">Відправити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/inputmask.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</html>
